@@ -11,9 +11,12 @@ const Group = mongoose.Schema({
   },
   description: {
     type: String,
-    required: true,
+    // required: true,
   },
   sport: {
+    type: String
+  },
+  skill: {
     type: String
   },
   location: {
@@ -21,6 +24,9 @@ const Group = mongoose.Schema({
   },
   members: {
     type: [String]
+  },
+  image: {
+    type: String
   }
 },
 {
